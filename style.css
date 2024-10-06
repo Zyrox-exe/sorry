@@ -1,5 +1,43 @@
-function revealMessage() {
-    const message = document.getElementById("message");
-    message.textContent = "I'm really sorry if I upset you. You're my best friend, Sulaim, and I value our friendship more than anything!";
-  }
-  
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(135deg, #ff9a9e, #fad0c4, #fad0c4);
+  background-size: 200% 200%;
+  animation: gradientShift 5s ease infinite;
+}
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.container {
+  background-color: white;
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  max-width: 600px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2.5em;
+  color: #ff6f61;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.3em;
+  color: #333;
+  line-height: 1.6;
+}
